@@ -35,5 +35,4 @@ for (let n of set) {
     }
 }
 return length;
-};
 }
