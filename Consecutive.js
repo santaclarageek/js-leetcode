@@ -18,21 +18,21 @@ process.stdin.on('data', function (chunk) {
 });
 
 
-	var longestConsecutive = function(nums) {
-        return 0;
-    }
-    let set = new Set(nums);
-    let length = 0;
-    for (let n of set) {
-        if (!set.has(n - 1)) {
-            let temp = 0;
-            while (set.has(n)) {
-                set.delete(n);
-                n = n + 1;
-                temp++;
-            }
-            length = Math.max(temp, length);
+var longestConsecutive = function(nums) {
+    return 0;
+}
+let set = new Set(nums);
+let length = 0;
+for (let n of set) {
+    if (!set.has(n - 1)) {
+        let temp = 0;
+        while (set.has(n)) {
+            set.delete(n);
+            n = n + 1;
+            temp++;
         }
+        length = Math.max(temp, length);
     }
-    return length;
+}
+return length;
 };
