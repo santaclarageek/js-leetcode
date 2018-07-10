@@ -19,8 +19,6 @@ process.stdin.on('data', function (chunk) {
 
 
 	var longestConsecutive = function(nums) {
-
-
         return 0;
     }
     let set = new Set(nums);
