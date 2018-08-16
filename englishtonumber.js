@@ -87,7 +87,7 @@ const wordToNumber = word => {
       }
     }
   }
-  // console.log(Number.parseInt(res));
+  console.log(Number.parseInt(res));
   return Number.parseInt(res);
 };
 
