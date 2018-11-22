@@ -1,7 +1,5 @@
 	// longest consecutive
-<!DOCTYPE html>
-<html>
-<head>
+
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
