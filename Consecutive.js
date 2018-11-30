@@ -1,10 +1,12 @@
 	// longest consecutive
+<!DOCTYPE html>
+<html>
+<head>
 
-	process.stdin.resume();
+process.stdin.resume();
 process.stdin.setEncoding('utf8');
 const fs = require('fs');
 var stdin = '';
-
 
 process.stdin.on('data', function (chunk) {
   stdin += chunk;
@@ -16,7 +18,6 @@ process.stdin.on('data', function (chunk) {
     process.stdout.write(longestConsecutive(parseInt(lines[i])).toString());
   }
 });
-
 
 
 	var longestConsecutive = function(nums) {
