@@ -1,6 +1,7 @@
+	// longest consecutive
 	var longestConsecutive = function(nums) {
 
-		
+
     if (nums === null || nums.length === 0) {
 
         return 0;
