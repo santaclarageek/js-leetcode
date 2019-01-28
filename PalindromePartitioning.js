@@ -10,9 +10,7 @@ process.stdin.on('data', function (chunk) {
 }).on('end', function() {
   var lines = stdin.trim().split('\n');
 
-  for(var i=0; i<lines.length; i++) {
-    process.stdout.write(coinChange(parseInt(lines[i])).toString());
-  }
+
 });
 
 
