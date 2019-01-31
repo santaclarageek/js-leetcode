@@ -1,3 +1,4 @@
+//solution
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 const fs = require('fs');
@@ -8,11 +9,12 @@ process.stdin.on('data', function (chunk) {
   
 }).on('end', function() {
   var lines = stdin.trim().split('\n');
-  
+
   for(var i=0; i<lines.length; i++) {
     process.stdout.write(coinChange(parseInt(lines[i])).toString());
   }
 });
+
 
 var minCut = function(s) {
     for (let i=-1;i<s.length;i++) minCut[i] = i;
