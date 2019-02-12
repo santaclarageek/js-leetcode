@@ -3,6 +3,11 @@ process.stdin.setEncoding('utf8');
 const fs = require('fs');
 var stdin = '';
 
+process.stdin.on('data', function (chunk) {
+  stdin += chunk;
+  
+})
+
 var minCut = function(s) {
     for (let i=-1;i<s.length;i++) minCut[i] = i;
     for (let i=0;i<Math.floor(s.length+1/2);i++){
