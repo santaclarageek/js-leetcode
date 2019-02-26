@@ -6,7 +6,9 @@ var stdin = '';
 process.stdin.on('data', function (chunk) {
   stdin += chunk;
   
-})
+}).on('end', function() {
+  var lines = stdin.trim().split('\n');
+  
 
 var minCut = function(s) {
     for (let i=-1;i<s.length;i++) minCut[i] = i;
