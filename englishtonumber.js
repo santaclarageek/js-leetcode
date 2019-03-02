@@ -11,13 +11,9 @@ process.stdin.on('data', function (chunk) {
   var lines = stdin.trim().split('\n');
   
   for(var i=0; i<lines.length; i++) {
-    process.stdout.write(lines[i]);
-    process.stout.write(coinChange(parseInt(lines[i])).toString());
+    process.stdout.write(coinChange(parseInt(lines[i])).toString());
   }
 });
-
-
-
 
 
 const wordToNumber = word => {
