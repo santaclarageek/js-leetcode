@@ -1,0 +1,89 @@
+// // Reverse a string 'reflexion' -> 'noixelfer'
+
+// const reverseStr = str => {
+//   return str.split("").reverse().join("");
+// };
+
+// // console.log(reverseStr('reflexion'));
+
+// const reverseStr1 = str => {
+//   let res = "";
+  
+//   for (let i = 0; i < str.length; i++) {
+//     res = str[i] + res;
+//   }
+//   return res;
+// };
+
+// // console.log(reverseStr1('reflexion'));
+
+// // Create a new class -> create method to reverse the string
+
+// class str {
+//   constructor(val) {
+//     this.val = val; // this?
+//   }
+  
+//   reverse() {
+//     let tmp = '';
+//     tmp = this.val.split("").reverse().join("");
+//     // const that = this;
+//     function reverse2 () {
+//       console.log(this.val);
+//     }
+//     const reverse3 = () => {
+//       console.log(this.val);
+//     };
+//     // reverse2();
+//     reverse3();
+    
+//   }
+// }
+
+// const str1 = new str('reflexion');
+
+// // console.log(str1.reverse());
+// // str1.reverse()
+
+// // === or ==
+
+// // console.log( 2==='2' );
+// // console.log( '2'===2 );
+
+// const asyncPromise = new Promise((resolve, reject) => {
+//   console.log("Function called");
+//   setTimeout(function() {
+//     resolve();
+//   }, 3000);
+// });
+
+// asyncPromise.then(() => {
+//   console.log("After 3 seconds");
+// });
+
+//call sync function for each element of the array, wait to process the next element until the previous one completes.
+
+let array1 = [1, 2, 3, 4];
+
+const asyncPromise = array => new Promise((resolve, reject) => {
+  console.log(array);
+  array1.forEach((ele, index) => {
+  setTimeout(() => {resolve(ele)}, 1000 * index);
+}).then(() => {
+  console.log(ele);
+});
+  
+asyncPromise(array1);
+
+// array1.forEach((ele, index) => {
+//   setTimeout(() => {console.log(ele)}, 1000 * index);
+// });
+
+
+
+
+
+
+
+  
+  
